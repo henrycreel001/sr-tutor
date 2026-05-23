@@ -5,7 +5,7 @@ import { CONTACT, SITE } from "@/lib/constants";
 
 export default function LocationStrip() {
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: "#1E2A5E" }}>
+    <section className="py-12 md:py-20 px-4" style={{ backgroundColor: "#1E2A5E" }}>
       <div className="max-w-7xl mx-auto">
         <AnimatedSection variant="fade" className="mb-14">
           <h2 className="text-3xl md:text-4xl font-bold font-serif text-white mb-4">

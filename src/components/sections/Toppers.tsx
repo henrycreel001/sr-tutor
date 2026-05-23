@@ -5,7 +5,7 @@ import { toppers } from "@/lib/data";
 
 export default function Toppers() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-12 md:py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection variant="fade" className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4 inline-flex items-center gap-3" style={{ color: "#1E3A8A" }}>

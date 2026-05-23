@@ -1,5 +1,5 @@
 export const WHATSAPP_NUMBER = "919667583615"; // Replace with actual number
-export const WHATSAPP_MESSAGE = "Hi SR TUTORS, I want to know more about your classes.";
+export const WHATSAPP_MESSAGE = "Hi SR Tutors, I want to know more about your classes.";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
 export const CONTACT = {
@@ -11,7 +11,7 @@ export const CONTACT = {
 };
 
 export const SITE = {
-  name: "SR TUTOR",
+  name: "SR Tutors",
   tagline: "Excellence in Education Since 2016",
   established: "2016",
   yearsExperience: "8+",

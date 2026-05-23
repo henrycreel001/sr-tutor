@@ -36,7 +36,7 @@ export default function CoursesPage() {
       />
 
       {/* Course Details */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-12 md:py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto space-y-16">
           {courseEntries.map((course, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>

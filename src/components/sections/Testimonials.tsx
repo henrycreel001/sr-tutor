@@ -31,7 +31,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="relative py-20 px-4 overflow-hidden" style={{ backgroundColor: "#F8FAFC" }}>
+    <section className="relative py-12 md:py-20 px-4 overflow-hidden" style={{ backgroundColor: "#F8FAFC" }}>
       <div
         className="absolute inset-0"
         style={{

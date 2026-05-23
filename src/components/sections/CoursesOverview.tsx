@@ -11,7 +11,7 @@ const colors = [
 
 export default function CoursesOverview() {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-12 md:py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection variant="fade" className="mb-14">
           <div className="border-l-4 pl-5" style={{ borderColor: "#F59E0B" }}>

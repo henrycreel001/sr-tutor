@@ -36,7 +36,7 @@ export default function CourseFAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-12 md:py-20 px-4 bg-white">
       <div className="max-w-3xl mx-auto">
         <AnimatedSection variant="fade" className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-serif" style={{ color: "#1E3A8A" }}>
