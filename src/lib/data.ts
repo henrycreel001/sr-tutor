@@ -2,15 +2,13 @@ export const courses = {
   foundation: {
     title: "Class 1 – 10",
     subtitle: "Foundation & School Coaching",
-    board: "CBSE / ICSE",
+    board: "CBSE",
     subjects: [
       "Mathematics",
       "Science",
       "English",
       "Social Studies",
       "Hindi",
-      "Sanskrit",
-      "Computer Science",
     ],
     description: "Strong foundational coaching for all subjects. Individual attention in small batches ensures every student grasps concepts clearly.",
   },
@@ -59,7 +57,7 @@ export const usps = [
   {
     icon: "Users",
     title: "Small, Focused Batches",
-    description: "Max 12 students per batch. Every doubt gets addressed in the same session — no waiting for \"next class.\"",
+    description: "Max 25 students per batch. Every doubt gets addressed in the same session — no waiting for \"next class.\"",
   },
   {
     icon: "IndianRupee",
@@ -138,10 +136,11 @@ export const testimonials = [
 // Client to provide actual names — placeholders show role until confirmed
 export const faculty = [
   {
-    name: "Maths & Science Faculty",
-    subject: "Mathematics & Science",
+    name: "Simran Ratti",
+    role: "Founder & Head Faculty",
+    subject: "All Subjects (Class 1–12)",
     experience: "8+ Years",
-    qualification: "M.Sc., B.Ed.",
+    qualification: "BA Programme, Jesus & Mary College (DU) · B.Ed, GGSIPU · MA Psychology, IGNOU",
     image: null,
   },
   {
@@ -175,5 +174,5 @@ export const stats = [
   { value: "8+", label: "Years of Experience" },
   { value: "500+", label: "Students Taught" },
   { value: "98%", label: "Board Pass Rate" },
-  { value: "≤12", label: "Students Per Batch" },
+  { value: "≤25", label: "Students Per Batch" },
 ];

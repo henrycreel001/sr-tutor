@@ -162,6 +162,11 @@ export default function AboutPage() {
                   <h3 className="font-bold text-lg mb-1" style={{ color: "#1E3A8A" }}>
                     {f.name}
                   </h3>
+                  {"role" in f && (
+                    <p className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-1">
+                      {f.role as string}
+                    </p>
+                  )}
                   <p className="text-sm font-medium mb-2" style={{ color: "#F59E0B" }}>
                     {f.subject}
                   </p>
