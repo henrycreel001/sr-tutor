@@ -60,7 +60,7 @@ export default function AboutPage() {
               <p className="text-sm font-semibold uppercase tracking-widest mb-4" style={{ color: "#F59E0B" }}>
                 Our Story
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: "#1E3A8A" }}>
+              <h2 className="text-3xl md:text-4xl font-bold font-serif mb-6" style={{ color: "#1E3A8A" }}>
                 {SITE.yearsExperience} Years of Shaping Futures
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
@@ -110,17 +110,14 @@ export default function AboutPage() {
       {/* Values */}
       <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-7xl mx-auto">
-          <AnimatedSection className="text-center mb-14">
-            <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#F59E0B" }}>
-              What Drives Us
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold" style={{ color: "#1E3A8A" }}>
+          <AnimatedSection variant="fade" className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold font-serif" style={{ color: "#1E3A8A" }}>
               Our Core Values
             </h2>
           </AnimatedSection>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((v, i) => (
-              <AnimatedSection key={i} delay={i * 0.1}>
+              <AnimatedSection key={i} delay={i * 0.08}>
                 <div className="bg-white rounded-2xl p-8 shadow-sm text-center h-full">
                   <div
                     className="inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-5"
@@ -146,7 +143,7 @@ export default function AboutPage() {
             <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#F59E0B" }}>
               Our Team
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold" style={{ color: "#1E3A8A" }}>
+            <h2 className="text-3xl md:text-4xl font-bold font-serif" style={{ color: "#1E3A8A" }}>
               Meet Our Faculty
             </h2>
             <p className="text-gray-500 mt-3 max-w-xl mx-auto">
@@ -156,7 +153,7 @@ export default function AboutPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {faculty.map((f, i) => (
               <AnimatedSection key={i} delay={i * 0.1}>
-                <div className="bg-[#F8FAFC] rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition-all">
+                <div className="bg-[#F8FAFC] rounded-2xl p-8 text-center shadow-brand shadow-brand-hover transition-[transform,box-shadow]">
                   <ImagePlaceholder
                     aspectRatio="aspect-square"
                     label="Faculty Photo"
@@ -180,7 +177,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 text-center" style={{ backgroundColor: "#F8FAFC" }}>
+      <section className="py-14 px-4 text-center" style={{ backgroundColor: "#F8FAFC" }}>
         <AnimatedSection>
           <h3 className="text-2xl font-bold mb-3" style={{ color: "#1E3A8A" }}>
             Want to know more?

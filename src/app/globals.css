@@ -13,6 +13,7 @@
   --color-background: #F8FAFC;
   --color-foreground: #1F2937;
   --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-serif);
 }
 
 * {
@@ -35,6 +36,18 @@ body {
   100% { transform: scale(1.6); opacity: 0; }
 }
 
+.whatsapp-pulse {
+  isolation: isolate;
+}
+
+.shadow-brand {
+  box-shadow: 0 4px 24px rgba(30, 58, 138, 0.08);
+}
+
+.shadow-brand-hover:hover {
+  box-shadow: 0 8px 32px rgba(30, 58, 138, 0.15);
+}
+
 .whatsapp-pulse::before {
   content: '';
   position: absolute;
@@ -43,9 +56,4 @@ body {
   background: #25D366;
   animation: pulse-ring 2s ease-out infinite;
   z-index: -1;
-}
-
-@keyframes fade-up {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
 }

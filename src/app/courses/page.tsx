@@ -4,6 +4,7 @@ import SectionBanner from "@/components/ui/SectionBanner";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import { courses, batchTimings } from "@/lib/data";
+import CourseFAQ from "@/components/sections/CourseFAQ";
 
 export const metadata: Metadata = {
   title: "Courses — Class 1–12 Coaching | SR TUTOR Tilak Nagar",
@@ -52,7 +53,7 @@ export default function CoursesPage() {
                       >
                         {course.board}
                       </span>
-                      <h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: colorMap[i].text }}>
+                      <h2 className="text-2xl md:text-3xl font-bold font-serif mb-2" style={{ color: colorMap[i].text }}>
                         {course.title}
                       </h2>
                       <p className="text-gray-600 mb-6 leading-relaxed">{course.description}</p>
@@ -73,13 +74,16 @@ export default function CoursesPage() {
 
                     <div className="md:w-64 flex-shrink-0">
                       <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
-                        <p className="text-sm font-medium text-gray-500 mb-2">Enroll Now</p>
+                        <p className="text-sm font-medium text-gray-500 mb-1">Enroll Now</p>
+                        <p className="text-xs font-semibold mb-3" style={{ color: "#1E3A8A" }}>
+                          Fees starting from ₹[X]/month
+                        </p>
                         <p className="text-xs text-gray-400 mb-4">
-                          Message us for fees, timings & batch availability
+                          Message us for exact fees & batch availability
                         </p>
                         <WhatsAppButton
                           variant="inline"
-                          label="Ask About Fees"
+                          label="Check Availability & Fees"
                           className="w-full justify-center"
                         />
                       </div>
@@ -99,7 +103,7 @@ export default function CoursesPage() {
             <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#F59E0B" }}>
               Schedule
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold" style={{ color: "#1E3A8A" }}>
+            <h2 className="text-3xl md:text-4xl font-bold font-serif" style={{ color: "#1E3A8A" }}>
               Batch Timings
             </h2>
           </AnimatedSection>
@@ -138,8 +142,10 @@ export default function CoursesPage() {
         </div>
       </section>
 
+      <CourseFAQ />
+
       {/* CTA */}
-      <section className="py-16 px-4 text-center bg-white">
+      <section className="py-14 px-4 text-center bg-white">
         <AnimatedSection>
           <h3 className="text-2xl font-bold mb-3" style={{ color: "#1E3A8A" }}>
             Want to know about fees & availability?
@@ -147,7 +153,7 @@ export default function CoursesPage() {
           <p className="text-gray-500 mb-6">
             Message us on WhatsApp and we'll get back to you instantly.
           </p>
-          <WhatsAppButton variant="primary" label="Ask About Fees on WhatsApp" />
+          <WhatsAppButton variant="primary" label="Check Availability & Fees" />
         </AnimatedSection>
       </section>
     </>

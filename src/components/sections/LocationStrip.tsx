@@ -7,11 +7,8 @@ export default function LocationStrip() {
   return (
     <section className="py-20 px-4" style={{ backgroundColor: "#1E2A5E" }}>
       <div className="max-w-7xl mx-auto">
-        <AnimatedSection className="text-center mb-14">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#F59E0B" }}>
-            Find Us
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        <AnimatedSection variant="fade" className="mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold font-serif text-white mb-4">
             Visit SR TUTOR in {SITE.location}
           </h2>
           <p className="text-blue-200 text-lg">

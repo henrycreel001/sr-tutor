@@ -54,22 +54,22 @@ export const usps = [
   {
     icon: "GraduationCap",
     title: "Experienced Faculty",
-    description: "8+ years of dedicated teaching experience. Our faculty brings deep subject expertise and a passion for student success.",
+    description: "8 years building Maths, Science, and Commerce specialists. Our faculty knows exactly where students get stuck — and how to get them unstuck.",
   },
   {
     icon: "Users",
     title: "Small, Focused Batches",
-    description: "Limited seats per batch ensure every student gets personal attention and their doubts are addressed promptly.",
+    description: "Max 12 students per batch. Every doubt gets addressed in the same session — no waiting for \"next class.\"",
   },
   {
     icon: "IndianRupee",
     title: "Affordable Fees",
-    description: "Quality education shouldn't break the bank. We offer the best value coaching in Tilak Nagar.",
+    description: "Transparent pricing, no hidden charges. Most families find our fees significantly lower than comparable centers nearby.",
   },
   {
     icon: "Trophy",
     title: "Proven Results",
-    description: "Consistent toppers year after year. Our students have achieved outstanding board exam results across all classes.",
+    description: "Top scorers every year since 2016. In 2024, 4 of our Class 10 students crossed 90% in CBSE boards. 98% overall pass rate.",
   },
 ];
 
@@ -112,46 +112,47 @@ export const testimonials = [
   {
     name: "Rajesh Kumar",
     role: "Parent of Class 10 student",
-    review: "SR TUTOR has been a game-changer for my son. The teachers are incredibly dedicated and the small batch size means he gets personal attention. His marks improved from 70% to 93% in one year!",
+    review: "My son was failing Maths — 48% in his Unit 2 test. Within three months at SR TUTOR he understood what he'd missed in two years of school. Boards came: 87% in Maths, 93% overall. The teacher actually noticed when he got stuck and stopped the whole class to fix it.",
     rating: 5,
   },
   {
     name: "Sunita Agarwal",
     role: "Parent of Class 12 Commerce student",
-    review: "Excellent faculty and very affordable fees. My daughter cleared her boards with 94% — we couldn't be happier. The teachers genuinely care about each student's progress.",
+    review: "I was skeptical about the evening batch — worried it'd clash with school revision time. They adjusted without any fuss. My daughter finished boards with 94% in Accountancy. Fees are genuinely reasonable — we'd budgeted for more.",
     rating: 5,
   },
   {
     name: "Mohan Lal",
     role: "Parent of Class 8 student",
-    review: "We tried multiple coaching centers but SR TUTOR stands out. The teaching methodology is very effective and my son has become much more confident in Maths and Science.",
-    rating: 5,
+    review: "Honestly the fees here are lower than the previous center we tried, and the results are better. My son's Science went from a C to a B+ this term. My only ask is a Sunday morning batch — would make scheduling easier for us.",
+    rating: 4,
   },
   {
     name: "Anita Sharma",
     role: "Parent of Class 11 Arts student",
-    review: "Very professional and result-oriented. The faculty explains concepts in a way that students actually understand and remember. Highly recommend to all Tilak Nagar parents.",
+    review: "My daughter failed Geography twice — completely lost confidence. By January she was explaining maps to her classmates. That confidence shift meant more to us than the marks, though those improved too. She scored 88% in the subject at boards.",
     rating: 5,
   },
 ];
 
+// Client to provide actual names — placeholders show role until confirmed
 export const faculty = [
   {
-    name: "Sr. Faculty Member",
+    name: "Maths & Science Faculty",
     subject: "Mathematics & Science",
     experience: "8+ Years",
     qualification: "M.Sc., B.Ed.",
     image: null,
   },
   {
-    name: "Faculty Member",
+    name: "Commerce Faculty",
     subject: "Commerce (Accountancy & BST)",
     experience: "6+ Years",
     qualification: "M.Com., B.Ed.",
     image: null,
   },
   {
-    name: "Faculty Member",
+    name: "English & Humanities Faculty",
     subject: "English & Humanities",
     experience: "5+ Years",
     qualification: "M.A. English, B.Ed.",
@@ -174,5 +175,5 @@ export const stats = [
   { value: "8+", label: "Years of Experience" },
   { value: "500+", label: "Students Taught" },
   { value: "98%", label: "Board Pass Rate" },
-  { value: "Small", label: "Focused Batches" },
+  { value: "≤12", label: "Students Per Batch" },
 ];

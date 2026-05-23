@@ -15,7 +15,7 @@ export default function SectionBanner({ title, subtitle, breadcrumb }: SectionBa
           Home / {breadcrumb}
         </p>
       )}
-      <h1 className="text-4xl md:text-5xl font-bold mb-3">{title}</h1>
+      <h1 className="text-4xl md:text-5xl font-bold font-serif mb-3">{title}</h1>
       {subtitle && (
         <p className="text-lg opacity-80 max-w-2xl mx-auto">{subtitle}</p>
       )}

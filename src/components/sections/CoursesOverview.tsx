@@ -13,23 +13,22 @@ export default function CoursesOverview() {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <AnimatedSection className="text-center mb-14">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#F59E0B" }}>
-            What We Teach
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#1E3A8A" }}>
-            Comprehensive Coaching for All Classes
-          </h2>
-          <p className="text-gray-500 max-w-2xl mx-auto text-lg">
-            From foundational learning in Class 1 to board exam mastery in Class 12 — we cover it all.
-          </p>
+        <AnimatedSection variant="fade" className="mb-14">
+          <div className="border-l-4 pl-5" style={{ borderColor: "#F59E0B" }}>
+            <h2 className="text-3xl md:text-4xl font-bold font-serif" style={{ color: "#1E3A8A" }}>
+              Comprehensive Coaching for All Classes
+            </h2>
+            <p className="text-gray-500 max-w-2xl mt-3 text-lg">
+              From foundational learning in Class 1 to board exam mastery in Class 12 — we cover it all.
+            </p>
+          </div>
         </AnimatedSection>
 
         <div className="grid md:grid-cols-3 gap-8">
           {courseList.map((course, i) => (
-            <AnimatedSection key={i} delay={i * 0.1}>
+            <AnimatedSection key={i} delay={i * 0.08}>
               <div
-                className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 h-full flex flex-col border-t-4"
+                className="group bg-white rounded-2xl p-8 shadow-brand shadow-brand-hover transition-[transform,box-shadow] hover:-translate-y-1 h-full flex flex-col border-t-4"
                 style={{ borderTopColor: colors[i].border }}
               >
                 <div
@@ -58,7 +57,7 @@ export default function CoursesOverview() {
                 </ul>
                 <a
                   href="/courses"
-                  className="flex items-center gap-1 text-sm font-semibold hover:gap-2 transition-all"
+                  className="flex items-center gap-1 text-sm font-semibold hover:gap-2 transition-[gap,color]"
                   style={{ color: colors[i].border }}
                 >
                   View Details <ArrowRight className="w-4 h-4" />
@@ -71,7 +70,7 @@ export default function CoursesOverview() {
         <AnimatedSection className="text-center mt-10" delay={0.4}>
           <a
             href="/courses"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold border-2 hover:text-white hover:bg-[#1E3A8A] transition-all"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold border-2 hover:text-white hover:bg-[#1E3A8A] transition-[background-color,color,border-color]"
             style={{ borderColor: "#1E3A8A", color: "#1E3A8A" }}
           >
             View All Courses <ArrowRight className="w-5 h-5" />

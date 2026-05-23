@@ -18,7 +18,7 @@ export default function GalleryPreview() {
             <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#F59E0B" }}>
               Gallery
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold" style={{ color: "#1E3A8A" }}>
+            <h2 className="text-3xl md:text-4xl font-bold font-serif" style={{ color: "#1E3A8A" }}>
               Life at SR TUTOR
             </h2>
           </div>

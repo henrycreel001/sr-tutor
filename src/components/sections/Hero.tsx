@@ -38,12 +38,12 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif text-white leading-tight mb-6"
             >
-              Excel in Every{" "}
-              <span style={{ color: "#F59E0B" }}>Subject.</span>
+              Where Class 10 Students{" "}
+              <span style={{ color: "#F59E0B" }}>Score 90%+</span>
               <br />
-              Achieve Your Best.
+              in CBSE Boards.
             </motion.h1>
 
             <motion.p
@@ -52,10 +52,9 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg text-blue-100 mb-8 leading-relaxed"
             >
-              {SITE.location}'s trusted coaching center for Class 1 to 12.
-              Small batches, experienced faculty, and{" "}
-              <span className="text-white font-semibold">proven results</span>{" "}
-              since {SITE.established}.
+              8 years. 500+ students. 98% board pass rate.{" "}
+              <span className="text-white font-semibold">Small batches mean your child actually gets seen</span>{" "}
+              — not lost in a crowd.
             </motion.p>
 
             <motion.div

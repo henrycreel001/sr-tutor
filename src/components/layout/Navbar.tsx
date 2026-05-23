@@ -1,10 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, MessageCircle } from "lucide-react";
-import { WHATSAPP_URL, SITE } from "@/lib/constants";
+import { Menu, X } from "lucide-react";
+import { SITE } from "@/lib/constants";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -58,16 +59,13 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-white text-sm font-semibold transition-all hover:scale-105 shadow-md"
-              style={{ backgroundColor: "#25D366" }}
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-white text-sm font-semibold transition-[background-color] hover:opacity-90 shadow-md"
+              style={{ backgroundColor: "#F59E0B" }}
             >
-              <MessageCircle className="w-4 h-4" fill="white" />
-              WhatsApp Us
-            </a>
+              Enroll Now
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,36 +80,44 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-[#1E2A5E] border-t border-white/10">
-          <div className="px-4 py-4 space-y-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                  pathname === link.href
-                    ? "bg-white/10 text-amber-400"
-                    : "text-white/80 hover:bg-white/5 hover:text-white"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 mx-4 mt-4 px-4 py-3 rounded-full text-white text-sm font-semibold justify-center"
-              style={{ backgroundColor: "#25D366" }}
+      <div className="md:hidden overflow-hidden">
+        <AnimatePresence>
+          {menuOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="bg-[#1E2A5E] border-t border-white/10"
             >
-              <MessageCircle className="w-4 h-4" fill="white" />
-              WhatsApp Us
-            </a>
-          </div>
-        </div>
-      )}
+              <div className="px-4 py-4 space-y-1">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                      pathname === link.href
+                        ? "bg-white/10 text-amber-400"
+                        : "text-white/80 hover:bg-white/5 hover:text-white"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+                <Link
+                  href="/contact"
+                  onClick={() => setMenuOpen(false)}
+                  className="flex items-center mx-4 mt-4 px-4 py-3 rounded-full text-white text-sm font-semibold justify-center"
+                  style={{ backgroundColor: "#F59E0B" }}
+                >
+                  Enroll Now
+                </Link>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </header>
   );
 }

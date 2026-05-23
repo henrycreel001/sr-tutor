@@ -16,10 +16,10 @@ export default function Home() {
       <TrustBar />
       <CoursesOverview />
       <WhySRTutor />
-      <Toppers />
       <Testimonials />
-      <GalleryPreview />
+      <Toppers />
       <LocationStrip />
+      <GalleryPreview />
     </>
   );
 }

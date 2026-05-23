@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Send, CheckCircle } from "lucide-react";
+import { WHATSAPP_NUMBER } from "@/lib/constants";
 
 const classOptions = [
   "Class 1", "Class 2", "Class 3", "Class 4", "Class 5",
@@ -17,7 +18,7 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const msg = `Hi SR TUTOR, my name is ${form.name}. I'm interested in coaching for ${form.class}. ${form.message} My phone: ${form.phone}`;
-    window.open(`https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(msg)}`, "_blank");
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
     setSubmitted(true);
   };
 

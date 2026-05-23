@@ -56,11 +56,9 @@ export default function ResultsPage() {
       {/* Toppers */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <AnimatedSection className="text-center mb-14">
-            <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#F59E0B" }}>
-              Hall of Fame
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold" style={{ color: "#1E3A8A" }}>
+          <AnimatedSection variant="fade" className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold font-serif inline-flex items-center gap-3" style={{ color: "#1E3A8A" }}>
+              <Trophy className="w-8 h-8 flex-shrink-0" style={{ color: "#F59E0B" }} />
               Our Toppers
             </h2>
             <p className="text-gray-500 mt-3 max-w-xl mx-auto">
@@ -70,8 +68,8 @@ export default function ResultsPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {toppers.map((topper, i) => (
-              <AnimatedSection key={i} delay={i * 0.1}>
-                <div className="bg-gradient-to-b from-[#EFF6FF] to-white rounded-2xl p-8 text-center shadow-md hover:shadow-xl transition-all border border-blue-50">
+              <AnimatedSection key={i} delay={i * 0.08}>
+                <div className="bg-gradient-to-b from-[#EFF6FF] to-white rounded-2xl p-8 text-center shadow-brand shadow-brand-hover transition-[transform,box-shadow] border border-blue-50">
                   <div className="relative mb-5">
                     <ImagePlaceholder
                       aspectRatio="aspect-square"
@@ -106,19 +104,16 @@ export default function ResultsPage() {
       {/* Parent Testimonials */}
       <section className="py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
         <div className="max-w-7xl mx-auto">
-          <AnimatedSection className="text-center mb-14">
-            <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#F59E0B" }}>
-              Parent Reviews
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold" style={{ color: "#1E3A8A" }}>
+          <AnimatedSection variant="fade" className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold font-serif" style={{ color: "#1E3A8A" }}>
               Parents Trust SR TUTOR
             </h2>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((t, i) => (
-              <AnimatedSection key={i} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all">
+              <AnimatedSection key={i} delay={i * 0.08}>
+                <div className="bg-white rounded-2xl p-8 shadow-brand shadow-brand-hover transition-[transform,box-shadow]">
                   <div className="flex gap-1 mb-4">
                     {Array.from({ length: t.rating }).map((_, j) => (
                       <Star key={j} className="w-5 h-5 fill-current" style={{ color: "#F59E0B" }} />
@@ -145,7 +140,7 @@ export default function ResultsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 text-center bg-white">
+      <section className="py-14 px-4 text-center bg-white">
         <AnimatedSection>
           <h3 className="text-2xl font-bold mb-3" style={{ color: "#1E3A8A" }}>
             Ready to join the next batch?

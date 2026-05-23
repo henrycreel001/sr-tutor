@@ -7,11 +7,9 @@ export default function Toppers() {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <AnimatedSection className="text-center mb-14">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#F59E0B" }}>
-            Our Achievement
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: "#1E3A8A" }}>
+        <AnimatedSection variant="fade" className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4 inline-flex items-center gap-3" style={{ color: "#1E3A8A" }}>
+            <Trophy className="w-8 h-8 flex-shrink-0" style={{ color: "#F59E0B" }} />
             Our Toppers
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-lg">
@@ -21,8 +19,8 @@ export default function Toppers() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {toppers.map((topper, i) => (
-            <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="bg-gradient-to-b from-[#EFF6FF] to-white rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-all border border-blue-50">
+            <AnimatedSection key={i} delay={i * 0.08}>
+              <div className="group bg-gradient-to-b from-[#EFF6FF] to-white rounded-2xl p-6 text-center shadow-brand shadow-brand-hover transition-[transform,box-shadow] border border-blue-50">
                 <div className="relative mb-4">
                   <ImagePlaceholder
                     aspectRatio="aspect-square"
@@ -55,7 +53,7 @@ export default function Toppers() {
         <AnimatedSection className="text-center mt-10" delay={0.4}>
           <a
             href="/results"
-            className="inline-flex items-center gap-2 font-semibold hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 font-semibold hover:gap-3 transition-[gap,color]"
             style={{ color: "#1E3A8A" }}
           >
             View All Results <ArrowRight className="w-5 h-5" />
