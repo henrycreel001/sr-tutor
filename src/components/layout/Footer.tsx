@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { MapPin, Clock, Phone, Mail, MessageCircle } from "lucide-react";
 import { SITE, CONTACT, WHATSAPP_URL } from "@/lib/constants";
 
@@ -12,6 +15,9 @@ const quickLinks = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname.startsWith("/preview")) return null;
+
   return (
     <footer style={{ backgroundColor: "#1E2A5E", borderTop: "4px solid #F59E0B" }} className="text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">

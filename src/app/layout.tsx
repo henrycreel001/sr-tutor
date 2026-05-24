@@ -3,7 +3,7 @@ import { Geist, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 
 const geist = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +44,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <WhatsAppButton variant="floating" />
+        <FloatingWhatsApp />
       </body>
     </html>
   );

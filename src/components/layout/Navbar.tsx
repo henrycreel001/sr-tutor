@@ -31,6 +31,8 @@ export default function Navbar() {
   const navBg = isHome && !scrolled ? "bg-transparent" : "bg-[#1E3A8A] shadow-lg";
   const logoColor = "text-white";
 
+  if (pathname.startsWith("/preview")) return null;
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
