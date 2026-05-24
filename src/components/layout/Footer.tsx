@@ -13,7 +13,7 @@ const quickLinks = [
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#1E2A5E" }} className="text-white">
+    <footer style={{ backgroundColor: "#1E2A5E", borderTop: "4px solid #F59E0B" }} className="text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}

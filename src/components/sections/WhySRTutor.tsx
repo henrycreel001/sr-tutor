@@ -11,7 +11,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 export default function WhySRTutor() {
   return (
-    <section className="py-12 md:py-20 px-4" style={{ backgroundColor: "#F8FAFC" }}>
+    <section className="py-12 md:py-20 px-4" style={{ backgroundColor: "#EFF6FF" }}>
       <div className="max-w-7xl mx-auto">
         <AnimatedSection variant="fade" className="text-center mb-14">
           <p className="text-sm font-semibold uppercase tracking-widest mb-3" style={{ color: "#F59E0B" }}>

@@ -17,5 +17,6 @@ export const SITE = {
   yearsExperience: "8+",
   studentsCount: "500+",
   passRate: "98%",
-  location: "SR Tutors, WZ-1A/2 Sant Garh , Tilak Nagar, New Delhi - 110018",
+  location: "Tilak Nagar, New Delhi",
+  fullAddress: "SR Tutors, WZ-1A/2 Sant Garh, Tilak Nagar, New Delhi - 110018",
 };
